@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>yomuosi鯖スプラ大会</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#10233f;background:#f5fbff;font-family:Arial,"Noto Sans JP",sans-serif}
+a{text-decoration:none;color:inherit}.header{position:sticky;top:0;z-index:10;background:#fffffff2;border-bottom:1px solid #dcecf7;backdrop-filter:blur(10px)}
+.nav{max-width:1100px;margin:auto;padding:14px 18px;display:flex;justify-content:space-between;align-items:center}.logo{font-weight:900;color:#0878ca}.links{display:flex;gap:8px}.links a{font-weight:800;padding:9px 13px;border-radius:999px}.links a:hover{background:#e8f6ff;color:#0878ca}
+.hero{background:linear-gradient(135deg,#e9f8ff,#fff 55%,#dff3ff);border-bottom:1px solid #d7ebf7}.hero-in{max-width:1100px;margin:auto;padding:80px 18px 72px}.eyebrow{font-weight:900;color:#0878ca;letter-spacing:.12em;font-size:.8rem}.hero h1{font-size:clamp(2.5rem,8vw,5.5rem);line-height:1;margin:14px 0 18px;letter-spacing:-.05em}.hero p{max-width:650px;line-height:1.9;color:#526b83}.btn{display:inline-block;margin-top:22px;background:#087bd0;color:white;padding:13px 19px;border-radius:12px;font-weight:900}
+.section{max-width:1100px;margin:auto;padding:58px 18px}.section h2{font-size:2rem;margin:0 0 10px}.lead{color:#60778e;line-height:1.8}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}.card{background:white;border:1px solid #dcecf7;border-radius:18px;padding:23px;box-shadow:0 8px 25px #154a6c0d}.card h3{margin:0 0 10px}.card p{margin:0;color:#63788d;line-height:1.75}.notice{margin-top:24px;background:#102f50;color:#fff;padding:25px;border-radius:18px}.notice p{color:#d9edf9;line-height:1.8}
+#regulations{border-top:1px solid #dcecf7}.reg-title{padding-top:10px}.toc{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}.toc a{background:#fff;border:1px solid #dcecf7;border-radius:10px;padding:9px 12px;color:#526b83;font-weight:700}.rule{background:#fff;border:1px solid #dcecf7;border-radius:18px;padding:26px;margin:15px 0;scroll-margin-top:85px}.rule h3{color:#0878ca;margin:0 0 20px}.item+.item{border-top:1px solid #e7f0f6;padding-top:19px;margin-top:19px}.item h4{margin:0 0 8px}.item p{white-space:pre-line;color:#52687d;line-height:1.9;margin:0}.note{margin-top:14px;background:#f1f9fe;padding:12px 14px;border-radius:10px;color:#46647d;line-height:1.7}
+.footer{border-top:1px solid #dcecf7;background:#fff;color:#6c8194}.footer-in{max-width:1100px;margin:auto;padding:27px 18px;font-size:.88rem;line-height:1.8}
+@media(max-width:700px){.nav{padding:12px}.links a{padding:8px 9px;font-size:.88rem}.hero-in{padding:60px 18px}.cards{grid-template-columns:1fr}.toc{flex-wrap:nowrap;overflow-x:auto}.toc a{white-space:nowrap}}
+</style>
+</head>
+<body>
+<header class="header"><nav class="nav"><a class="logo" href="#top">YOMUOSI 鯖</a><div class="links"><a href="#top">HOME</a><a href="#regulations">REGULATIONS</a></div></nav></header>
+
+<main id="top">
+<section class="hero"><div class="hero-in">
+<div class="eyebrow">YOMUOSI SERVER · SPLATOON TOURNAMENT</div>
+<h1>yomuosi鯖<br>スプラ大会</h1>
+<p>yomuosi鯖で開催されるスプラ大会の情報をまとめたサイトです。大会のレギュレーションや開催に関する情報を確認できます。</p>
+<a class="btn" href="#regulations">レギュレーションを見る →</a>
+</div></section>
+
+<section class="section">
+<h2>大会について</h2><p class="lead">大会に参加する前に、基本的なルールと進行方法をご確認ください。</p>
+<div class="cards">
+<div class="card"><h3>🏆 大会概要</h3><p>大会名称、開催日程、開催場所、運営について確認できます。</p></div>
+<div class="card"><h3>🎮 2vs2</h3><p>大会は基本的に2人1組のチームで進行します。</p></div>
+<div class="card"><h3>📜 規定</h3><p>参加・エントリーから禁止事項、回線落ち、裁定まで掲載しています。</p></div>
+</div>
+<div class="notice"><h2>📢 大会日程について</h2><p>開催日程はサーバー内の「スプラ大会予定等」チャンネルにてお知らせします。最新の開催情報はそちらをご確認ください。</p></div>
+</section>
+
+<section class="section" id="regulations">
+<h2 class="reg-title">📜 大会レギュレーション</h2><p class="lead">yomuosi鯖スプラ大会に参加する前に、各項目をご確認ください。</p>
+<div class="toc">
+<a href="#r1">1. 大会概要</a><a href="#r2">2. 参加・エントリー</a><a href="#r3">3. 試合形式</a><a href="#r4">4. ステージ・ルール選択</a><a href="#r5">5. 試合の進行</a><a href="#r6">6. 勝敗・順位決定</a><a href="#r7">7. 禁止事項</a><a href="#r8">8. 回線落ち・トラブル</a><a href="#r9">9. 選手・チーム</a><a href="#r10">10. 違反・ペナルティ</a><a href="#r11">11. 運営・裁定</a><a href="#r12">12. その他</a>
+</div>
+
+<div class="rule" id="r1"><h3>1. 🏆 大会概要</h3>
+<div class="item"><h4>大会名称</h4><p>通常大会は「第〇回スプラ大会」という名称で開催します。
+番外編については、「Yomuosi 〇〇〇 〇〇〇」の形式で大会名を決定します。</p></div>
+<div class="item"><h4>大会開催日程</h4><p>開催日程については、サーバー内の「スプラ大会予定等」チャンネルにてお知らせします。
+大会への参加を予定している方は、そちらをご確認ください。</p></div>
+<div class="item"><h4>大会開催場所</h4><p>基本的には、ゲーム部屋のVC（ボイスチャット）にて開催します。
+ゲーム部屋がすでに使用されている場合は、「ゲーム部屋2」など、別のVCへ変更して開催します。</p></div>
+<div class="item"><h4>大会運営</h4><p>fwanana
+※今後、運営メンバーを追加する場合があります。</p></div></div>
+
+<div class="rule" id="r2"><h3>2. 👥 参加・エントリー</h3>
+<div class="item"><h4>参加条件</h4><p>参加条件は特にありません。
+※一部の大会では、参加者が限定されている場合があります。</p></div>
+<div class="item"><h4>エントリー方法</h4><p>20:45までに、大会を開催しているVC（ボイスチャット）および『スプラトゥーン3』のプライベートマッチに参加していれば、エントリー完了となります。</p></div>
+<div class="item"><h4>エントリー締切</h4><p>20:00からエントリーを開始し、20:45をエントリー締切とします。</p></div>
+<div class="item"><h4>チーム編成</h4><p>大会は2vs2形式で進行するため、2人1組のチームを編成します。
+チーム編成は、ルーレットや主催者による決定など、大会ごとに定められた方法で決定します。</p></div>
+<div class="item"><h4>選手変更・代理出場</h4><p>大会開催前に、補欠選手と主催者へ事前に申し出る必要があります。
+参加人数が奇数になった場合、1人で参加することになった選手のチームに補欠選手を入れて、2人1組のチームを編成します。</p></div></div>
+
+<div class="rule" id="r3"><h3>3. 🎮 試合形式</h3>
+<div class="item"><h4>試合ルール</h4><p>すべての大会に共通する試合形式は、2vs2です。
+ただし、採用されるゲームルールについては大会によって異なる場合があります。</p></div>
+<div class="item"><h4>通常大会の共通ルール</h4><p>通常大会では、2vs2による総当たり2回のリーグ戦を行います。
+総当たり終了時に同ポイントのチームが存在する場合は、サドンデスを行います。</p></div>
+<div class="item"><h4>番外編の大会共通ルール</h4><p>番外編については、通常大会とは異なるゲームルールが採用される場合があります。
+大会ごとの具体的なルールについては、各大会の案内をご確認ください。</p></div>
+<div class="item"><h4>サドンデスについて</h4><p>通常大会およびリーグ戦形式の番外編大会において、総当たり終了時に同ポイントのチームが発生した場合に行います。
+サドンデスは一発勝負で決着をつけます。</p></div></div>
+
+<div class="rule" id="r4"><h3>4. 🗺️ ステージ・ルール選択</h3>
+<div class="item"><h4>使用ステージ</h4><p>基本的にはランダムで決定します。
+ただし、番外編大会によっては、参加者がステージを選択できる場合があります。
+大会ごとの詳細については、各大会の案内をご確認ください。</p></div>
+<div class="item"><h4>ステージ重複の扱い</h4><p>ステージが前の試合と重複した場合でも、特別な対応は行いません。
+同じステージになった場合も、そのまま試合を開始します。</p></div></div>
+
+<div class="rule" id="r5"><h3>5. ⚔️ 試合の進行</h3>
+<div class="item"><h4>試合開始までの流れ</h4><p>1. 主催からチームを発表
+2. 試合順を説明
+3. チームを決定
+4. 試合開始</p></div>
+<div class="item"><h4>集合時間</h4><p>20:00～20:45までにエントリーを行ってください。
+エントリー方法については「参加・エントリー」の項目をご確認ください。</p></div>
+<div class="item"><h4>試合終了後の流れ</h4><p>試合終了後、主催が勝敗を記録します。
+記録が完了した後、すぐに次の試合を開始しますので、次の試合に備えて準備しておいてください。</p></div>
+<div class="item"><h4>結果報告</h4><p>主催が特別な理由により、その試合の観戦を離席していた場合は、参加者のいずれかが主催へ試合結果を報告してください。
+それ以外の場合、参加者からの結果報告は必要ありません。</p></div></div>
+
+<div class="rule" id="r6"><h3>6. 🏅 勝敗・順位決定</h3>
+<div class="item"><h4>リーグ戦の順位決定方法</h4><p>リーグ戦終了後、勝利数が最も多いチームを優勝とします。
+順位は、勝利数が多い順に決定します。</p></div>
+<div class="item"><h4>大会終了後</h4><p>大会終了後には、エキシビジョンマッチとして通常のプライベートマッチを行います。
+エキシビジョンマッチへの参加は必須ではありません。大会終了後は、ご自身の都合のよいタイミングで自由に退出してください。</p></div>
+<div class="note">※ 同じ勝利数のチームが発生した場合は、「サドンデスについて」の規定に従います。</div></div>
+
+<div class="rule" id="r7"><h3>7. 🚫 禁止事項</h3>
+<div class="item"><h4>禁止行為</h4><p>本大会では、以下の行為を禁止します。
+・バグ・グリッチの利用
+・チーミング
+・過度なリスキル（ヤグラに乗らず、リスキルのみを目的とした行為など）
+・意図的な敗北
+・故意の切断
+・チート
+・その他の不正行為</p></div>
+<div class="item"><h4>チート・不正行為</h4><p>チートやその他の不正行為については、任天堂のガイドラインに基づき、本大会でも禁止とします。</p></div>
+<div class="item"><h4>故意の切断</h4><p>明らかに故意によるものと判断される切断については、通常の「試合から1分以上の切断によるペナルティ」の規定とは別に扱います。
+故意の切断が発覚した時点で、その試合を敗北扱いとします。</p></div></div>
+
+<div class="rule" id="r8"><h3>8. 📡 回線落ち・トラブル</h3>
+<div class="item"><h4>試合中の回線落ち</h4><p>試合中に回線落ちが発生した場合は、その時点での試合状況を考慮して判断します。
+
+・試合開始直後など、まだ試合の状況がほとんど決まっていない段階で回線落ちが発生した場合 → 特にペナルティを設けず、再試合を行います。
+・試合がある程度拮抗しているものの、どちらか一方が攻めている状況で回線落ちが発生した場合 → 回線落ちしたチームが2試合連続で勝利するまで、勝利判定とはしません。
+・回線落ちが発生した時点で、明らかにそのまま試合を続けていれば勝利していたと判断できる場合 → そのチームの勝利判定とします。
+
+最終的な判定については、試合の状況を確認したうえで主催が判断します。</p></div>
+<div class="item"><h4>部屋のエラー</h4><p>試合部屋を作成しているプレイヤーに通信エラーが発生した場合は、その時点での試合状況を考慮して判断します。
+状況によっては、同じステージで再試合を行います。</p></div>
+<div class="item"><h4>再試合の条件</h4><p>以下の場合など、試合状況によって再試合を行う場合があります。
+・回線落ちしたチームが劣勢ではないものの、すぐに勝利できるほど優勢でもない場合
+・試合開始から1分以内に回線落ちが発生した場合
+
+※試合の状況によっては、回線落ちしたチームに2試合連続勝利が必要となる場合があります。</p></div>
+<div class="note">※ 回線落ちが発生した場合の最終的な対応は、試合状況を確認したうえで主催が判断します。</div></div>
+
+<div class="rule" id="r9"><h3>9. 🔄 選手・チームに関する規定</h3>
+<div class="item"><h4>選手交代</h4><p>選手の交代は、基本的に認めません。
+ただし、チームの参加者のうち1名が何らかの理由で大会の進行が困難となった場合は、事前に申告された補欠選手を入れることができます。</p></div>
+<div class="item"><h4>棄権</h4><p>チームの参加者のうち1名が大会の進行が困難となり、さらに補欠選手がいない場合は、そのチームを強制的に敗北扱いとします。
+この場合、棄権扱いとはしませんが、その後に予定されているすべての試合について敗北判定となります。</p></div>
+<div class="item"><h4>欠席について</h4><p>大会への参加を主催者に伝えていたものの、用事などの理由によって参加できなくなった場合は、大会開催前またはエントリー締切前に、速やかに主催者へ連絡してください。</p></div></div>
+
+<div class="rule" id="r10"><h3>10. ⚖️ 違反・ペナルティ</h3>
+<div class="item"><h4>ルール違反時の対応</h4><p>番外編大会において、大会ごとに定められた特別なルールを守れていなかった場合は、再試合を行います。
+この場合、特別なペナルティは設けません。</p></div>
+<div class="item"><h4>大会失格・出場停止等</h4><p>yomuosi鯖のルールにそぐわない行動があり、タイムアウトなどの処罰を受けた場合、その選手を大会失格とします。
+また、失格となった選手は、通常大会1回が終了するまで出場停止とします。</p></div>
+<div class="note">※ 試合中の回線落ちについては、「回線落ち・トラブル」をご確認ください。</div></div>
+
+<div class="rule" id="r11"><h3>11. 🛡️ 運営・裁定</h3>
+<div class="item"><h4>運営の権限</h4><p>運営は、大会における基本的な判断および最終的な判断を行います。
+判定などについて異議がある場合は、運営へお申し立てください。</p></div>
+<div class="item"><h4>異議申し立て</h4><p>明らかに誤った判定だと思われる判定があった場合は、判定が確定する前になるべく早く運営へご連絡ください。
+判定確定後の申し立てについては、対応できない場合があります。</p></div>
+<div class="item"><h4>規定にない問題が発生した場合</h4><p>レギュレーションに記載されていない問題やトラブルが発生した場合は、主催者へご連絡ください。
+状況を確認したうえで、運営が対応を判断します。</p></div></div>
+
+<div class="rule" id="r12"><h3>12. 📖 その他</h3>
+<div class="item"><h4>規定の変更</h4><p>規定に変更があった場合は、サーバー内の「スプラ大会予定等」チャンネルにてお知らせします。</p></div>
+<div class="item"><h4>大会の中止・延期</h4><p>エントリー終了時点で、大会の開催に必要な人数が集まっていなかった場合は、大会の延期または中止を行います。</p></div>
+<div class="item"><h4>上記に該当しない事</h4><p>上記の項目に該当しない事項や問題が発生した場合は、運営までご連絡ください。</p></div></div>
+</section>
+</main>
+
+<footer class="footer"><div class="footer-in">本サイトはyomuosi鯖が運営する非公式のコミュニティ大会サイトです。<br>任天堂株式会社その他の権利者が運営・公認・協賛するものではありません。</div></footer>
+</body>
+</html>
