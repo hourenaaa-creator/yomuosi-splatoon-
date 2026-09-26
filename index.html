@@ -12,6 +12,81 @@ a{text-decoration:none;color:inherit}.header{position:sticky;top:0;z-index:10;ba
 .section{max-width:1100px;margin:auto;padding:58px 18px}.section h2{font-size:2rem;margin:0 0 10px}.lead{color:#60778e;line-height:1.8}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}.card{background:white;border:1px solid #dcecf7;border-radius:18px;padding:23px;box-shadow:0 8px 25px #154a6c0d}.card h3{margin:0 0 10px}.card p{margin:0;color:#63788d;line-height:1.75}.notice{margin-top:24px;background:#102f50;color:#fff;padding:25px;border-radius:18px}.notice p{color:#d9edf9;line-height:1.8}
 #regulations{border-top:1px solid #dcecf7}.reg-title{padding-top:10px}.toc{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}.toc a{background:#fff;border:1px solid #dcecf7;border-radius:10px;padding:9px 12px;color:#526b83;font-weight:700}.rule{background:#fff;border:1px solid #dcecf7;border-radius:18px;padding:26px;margin:15px 0;scroll-margin-top:85px}.rule h3{color:#0878ca;margin:0 0 20px}.item+.item{border-top:1px solid #e7f0f6;padding-top:19px;margin-top:19px}.item h4{margin:0 0 8px}.item p{white-space:pre-line;color:#52687d;line-height:1.9;margin:0}.note{margin-top:14px;background:#f1f9fe;padding:12px 14px;border-radius:10px;color:#46647d;line-height:1.7}
 .footer{border-top:1px solid #dcecf7;background:#fff;color:#6c8194}.footer-in{max-width:1100px;margin:auto;padding:27px 18px;font-size:.88rem;line-height:1.8}
+  /* ===== 歴代優勝記録 ===== */
+.history-wrap{
+  margin-top:28px;
+}
+
+.history-slider{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:min(82vw,300px);
+  gap:18px;
+  width:100%;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding:6px 4px 18px;
+  scroll-snap-type:x mandatory;
+  overscroll-behavior-x:contain;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+}
+
+.history-card{
+  min-height:330px;
+  border-radius:22px;
+  padding:22px;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  scroll-snap-align:start;
+  box-shadow:0 10px 25px #154a6c20;
+}
+
+.history-card.regular{
+  background:linear-gradient(145deg,#ff9d2e,#f05b22);
+}
+
+.history-card.special{
+  background:linear-gradient(145deg,#c8ef42,#55bd52);
+}
+
+.history-card .event{
+  font-size:14px;
+  font-weight:900;
+  opacity:.9;
+}
+
+.history-card .winner-label{
+  text-align:center;
+  font-size:18px;
+  font-weight:900;
+  margin-top:38px;
+}
+
+.history-card .winner{
+  text-align:center;
+  font-size:22px;
+  font-weight:900;
+  line-height:1.5;
+  margin-top:10px;
+}
+
+.history-card .hint{
+  text-align:center;
+  font-size:13px;
+  font-weight:800;
+  border-top:1px solid #ffffff66;
+  padding-top:15px;
+}
+
+.history-note{
+  text-align:center;
+  color:#60778e;
+  font-size:13px;
+  margin-top:4px;
+}
 @media(max-width:700px){.nav{padding:12px}.links a{padding:8px 9px;font-size:.88rem}.hero-in{padding:60px 18px}.cards{grid-template-columns:1fr}.toc{flex-wrap:nowrap;overflow-x:auto}.toc a{white-space:nowrap}}
 </style>
 </head>
