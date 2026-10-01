@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yomuosi Sudden Death・大会詳細 Wiki</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;background:#f5fbff;color:#10233f}
+.header{background:#fff;border-bottom:1px solid #dcecf6;position:sticky;top:0;z-index:10}
+.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.logo{color:#0878ca;text-decoration:none;font-weight:1000;font-size:20px}
+.back{text-decoration:none;color:#0878ca;font-weight:900;background:#eaf6ff;padding:9px 15px;border-radius:999px}
+.hero{padding:70px 20px 55px;background:linear-gradient(135deg,#eaf8ff,#fff);text-align:center}
+.hero .tag{display:inline-block;background:#0878ca;color:#fff;padding:7px 14px;border-radius:999px;font-size:13px;font-weight:900}
+h1{margin:18px 0 8px;font-size:clamp(30px,6vw,52px)}
+.subtitle{margin:0;color:#60778e;font-weight:800}
+main{max-width:1000px;margin:0 auto;padding:35px 20px 70px}
+.section{background:#fff;border-radius:22px;padding:28px;margin-bottom:25px;box-shadow:0 8px 25px #154a6c12}
+.section h2{margin-top:0;color:#0878ca;font-size:25px}
+.winner{text-align:center;background:linear-gradient(145deg,#fff5cf,#ffe7a0);border:2px solid #f0c84b}
+.winner .medal{font-size:42px}
+.winner h2{color:#9a6900;margin-bottom:8px}
+.winner-name{font-size:27px;font-weight:1000}
+.record{font-size:18px;font-weight:900;margin-top:8px}
+.overview{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.overview-card{background:#f5fbff;border-radius:15px;padding:18px}
+.overview-card .label{font-size:13px;color:#60778e;font-weight:900}
+.overview-card .value{font-size:20px;font-weight:1000;margin-top:5px}
+.tournament-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:10px}
+.tournament-bracket{min-width:900px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;align-items:center;padding:20px 10px}
+.round{display:flex;flex-direction:column;gap:80px}
+.round.final-round{gap:0}
+.match{background:#f5fbff;border:2px solid #dcecf6;border-radius:16px;overflow:hidden;box-shadow:0 5px 15px #154a6c0d}
+.match-title{background:#0878ca;color:#fff;padding:8px 12px;font-size:13px;font-weight:900;text-align:center}
+.team{display:flex;justify-content:space-between;gap:15px;padding:13px 15px;font-weight:900;background:#fff;border-bottom:1px solid #dcecf6}
+.team:last-child{border-bottom:0}
+.team.winner-team{background:#eaf9ed;color:#218838}
+.team.bye{background:#fff8df;color:#9a7400}
+.score{font-weight:1000}
+.connector{font-size:12px;color:#60778e;text-align:center;font-weight:800;margin-top:7px}
+.round-label{text-align:center;color:#0878ca;font-size:14px;font-weight:1000;margin-bottom:12px}
+.ranking{display:grid;gap:12px}
+.rank{display:flex;align-items:center;gap:14px;padding:15px 17px;border-radius:15px;background:#f5fbff;font-weight:900}
+.rank strong{font-size:25px;min-width:28px}
+.rank span{margin-left:0}
+.game-list{display:grid;gap:16px}
+.game-card{border:1px solid #dcecf6;border-radius:16px;overflow:hidden}
+.game-head{background:#f5fbff;padding:13px 16px;font-weight:1000;color:#0878ca}
+.game-body{padding:16px}
+.game-result{font-size:20px;font-weight:1000}
+.game-note{margin-top:8px;line-height:1.85;color:#304a65}
+.highlight{margin-top:18px;padding:18px;border-radius:15px;background:linear-gradient(135deg,#fff5cf,#fff);border:1px solid #f0c84b}
+.highlight-title{display:flex;align-items:center;gap:9px;font-size:20px;font-weight:1000;color:#9a6900;margin-bottom:8px}
+.highlight-title .fire{font-size:25px}
+.highlight p{margin:6px 0;line-height:1.9}
+.highlight strong{color:#9a6900}
+.record-box{background:linear-gradient(135deg,#f5fbff,#eef8ff);border-left:5px solid #0878ca;padding:20px;border-radius:14px}
+.record-box p{line-height:1.9;margin:8px 0}
+footer{text-align:center;color:#60778e;padding:30px 20px;font-size:13px}
+@media(max-width:700px){
+.nav{padding:12px 14px}.logo{font-size:17px}.back{font-size:13px;padding:8px 11px}
+.hero{padding:55px 16px 45px}main{padding:25px 14px 55px}
+.section{padding:22px 16px;border-radius:18px}.winner-name{font-size:23px}
+.overview{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+<nav class="nav">
+<a class="logo" href="../index.html">YOMUOSI 鯖</a>
+<a class="back" href="../index.html">← 大会一覧へ</a>
+</nav>
+</header>
+
+<section class="hero">
+<span class="tag">番外編</span>
+<h1>Yomuosi Sudden Death</h1>
+<p class="subtitle">Yomuosi Sudden Death・大会詳細 Wiki</p>
+</section>
+
+<main>
+
+<section class="section winner">
+<div class="medal">🏆</div>
+<h2>優勝</h2>
+<div class="winner-name">ひまりぴくみんチーム</div>
+<div class="record">決勝 2勝1敗</div>
+</section>
+
+<section class="section">
+<h2>📋 大会概要</h2>
+<div class="overview">
+<div class="overview-card">
+<div class="label">大会形式</div>
+<div class="value">トーナメント方式</div>
+</div>
+<div class="overview-card">
+<div class="label">勝利条件</div>
+<div class="value">2本先取</div>
+</div>
+<div class="overview-card">
+<div class="label">決勝</div>
+<div class="value">ハッシュパラダイス 1-2 ひまりぴくみん</div>
+</div>
+<div class="overview-card">
+<div class="label">シード</div>
+<div class="value">ひまりぴくみんチーム</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>🏆 トーナメント結果</h2>
+<div class="tournament-scroll">
+<div class="tournament-bracket">
+
+<div>
+<div class="round-label">準決勝</div>
+<div class="round">
+<div class="match">
+<div class="match-title">準決勝①</div>
+<div class="team winner-team"><span>ハッシュパラダイス</span><span class="score">2</span></div>
+<div class="team"><span>のふあskyチーム</span><span class="score">0</span></div>
+</div>
+<div class="connector">↓ 勝者進出</div>
+<div class="match">
+<div class="match-title">準決勝②</div>
+<div class="team winner-team"><span>ひまりぴくみんチーム</span><span class="score">不戦勝</span></div>
+<div class="team bye"><span>対戦相手なし</span><span class="score">シード</span></div>
+</div>
+</div>
+</div>
+
+<div>
+<div class="round-label">決勝</div>
+<div class="round final-round">
+<div class="match">
+<div class="match-title">決勝</div>
+<div class="team"><span>ハッシュパラダイス</span><span class="score">1</span></div>
+<div class="team winner-team"><span>ひまりぴくみん</span><span class="score">2</span></div>
+</div>
+</div>
+</div>
+
+<div>
+<div class="round-label">優勝</div>
+<div class="round final-round">
+<div class="match">
+<div class="match-title">🏆 YSD優勝</div>
+<div class="team winner-team"><span>ひまりぴくみんチーム</span><span class="score">2勝1敗</span></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>⚔️ 試合詳細</h2>
+<div class="game-list">
+
+<div class="game-card">
+<div class="game-head">準決勝①　ハッシュパラダイス vs のふあskyチーム</div>
+<div class="game-body">
+<div class="game-result">ハッシュパラダイス　2 - 0　のふあskyチーム</div>
+<p class="game-note">2本先取でハッシュパラダイスが決勝進出。</p>
+</div>
+</div>
+
+<div class="game-card">
+<div class="game-head">準決勝②　ひまりぴくみんチーム</div>
+<div class="game-body">
+<div class="game-result">🛡️ シード・不戦勝</div>
+<p class="game-note">対戦相手がいなかったため、ひまりぴくみんチームはシードとして決勝へ進出。</p>
+</div>
+</div>
+
+<div class="game-card">
+<div class="game-head">決勝・第1試合</div>
+<div class="game-body">
+<div class="game-result">🟢 ハッシュパラダイス 勝利</div>
+<p class="game-note">試合経験の差が出たと考えられる一戦。ひまりぴくみんとはエイムの方向性も異なり、ハッシュパラダイスが前へ押し込んで勝利した。</p>
+</div>
+</div>
+
+<div class="game-card">
+<div class="game-head">決勝・第2試合</div>
+<div class="game-body">
+<div class="game-result">🟢 ひまりぴくみんチーム 勝利</div>
+<p class="game-note">残り5秒でひまりがパラダイス松本とハッシュを撃破。ワイプアウトを取ると、そこから一気に流れをひっくり返して勝利した。</p>
+</div>
+</div>
+
+<div class="game-card">
+<div class="game-head">決勝・第3試合</div>
+<div class="game-body">
+<div class="game-result">🟢 ひまりぴくみんチーム 勝利</div>
+<p class="game-note">第2試合で生まれた勢いをそのまま維持し、ひまりぴくみんチームが押し切って優勝を決めた。</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>🏅 大会結果</h2>
+<div class="ranking">
+<div class="rank"><strong>🥇</strong><span><b>ひまりぴくみんチーム</b>　決勝 2勝1敗</span></div>
+<div class="rank"><strong>🥈</strong><span><b>ハッシュパラダイス</b>　決勝 1勝2敗</span></div>
+<div class="rank"><strong>4️⃣</strong><span><b>のふあskyチーム</b>　準決勝敗退</span></div>
+</div>
+</section>
+
+<section class="section">
+<h2>📖 大会記録</h2>
+<div class="record-box">
+<p><b>YSDはトーナメント方式で行われた番外編大会で、2本先取を採用した。</b></p>
+<p>準決勝ではハッシュパラダイスがのふあskyチームを2-0で破り、決勝へ進出した。一方、ひまりぴくみんチームは対戦相手がいなかったためシードとなり、そのまま決勝へ進出した。</p>
+</div>
+
+<div class="highlight">
+<div class="highlight-title"><span class="fire">🔥</span><span>決勝、ひまりぴくみんの大逆転</span></div>
+<p>決勝第1試合はハッシュパラダイスが勝利。試合経験の差が出たと考えられ、ひまりぴくみんとは異なるエイムの方向性を見せながら、前へ押し込んで勝利した。</p>
+<p>しかし第2試合、残り<b>5秒</b>でひまりがパラダイス松本とハッシュを撃破。さらにワイプアウトを決め、そこから一気に流れを逆転させて勝利した。</p>
+<p>そして第3試合もその勢いを維持し、ひまりぴくみんチームが押し切って勝利。決勝を<b>2-1</b>で制し、YSD優勝を決めた。</p>
+</div>
+</section>
+
+</main>
+
+<footer>
+本サイトはyomuosi鯖が運営する非公式のコミュニティ大会サイトです。<br>
+任天堂株式会社その他の権利者が運営・公認・協賛するものではありません。
+</footer>
+
+</body>
+</html>
